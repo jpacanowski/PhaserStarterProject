@@ -5,7 +5,13 @@
 //import Play from './states/Play';
 //import Win from './states/Win';
 
-var game = new Phaser.Game(800, 600);
+const config = {
+    type: Phaser.AUTO,
+    width: 800,
+    height: 600
+};
+
+const game = new Phaser.Game(config);
 
 game.state.add('boot', bootState);
 game.state.add('load', loadState);
